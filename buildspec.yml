@@ -23,7 +23,8 @@ phases:
       - cfn-lint --include-checks I --template templates/workload.template.yaml
 
       # Run CFN Nag
-      - cfn_nag --fail-on-warnings --output-format txt templates/workload.template.yaml
+      #- cfn_nag --fail-on-warnings --output-format txt templates/workload.template.yaml
+      - cfn_nag --output-format txt templates/workload.template.yaml
 
       # Run taskcat, strip color escape codes, output taskcat log files on STDOUT, and exit with result of taskcat
       - |
