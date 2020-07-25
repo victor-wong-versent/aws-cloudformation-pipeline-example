@@ -10,5 +10,7 @@ project:
 tests:
   apac-regions:  
     template: templates/workload.template.yaml    
+    parameters: 
+      BucketName: $[taskcat_autobucket]
     regions:
       - ap-southeast-2
