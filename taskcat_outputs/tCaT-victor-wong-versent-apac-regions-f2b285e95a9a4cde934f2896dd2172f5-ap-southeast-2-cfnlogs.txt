@@ -1,0 +1,21 @@
+-----------------------------------------------------------------------------
+Region: ap-southeast-2
+StackName: tCaT-victor-wong-versent-apac-regions-f2b285e95a9a4cde934f2896dd2172f5
+*****************************************************************************
+ResourceStatusReason:  
+Stack launch was successful
+*****************************************************************************
+*****************************************************************************
+Events:  
+TimeStamp                         ResourceStatus      ResourceType                LogicalResourceId                                                       ResourceStatusReason
+--------------------------------  ------------------  --------------------------  ----------------------------------------------------------------------  ---------------------------
+2020-07-25 05:18:57.818000+00:00  CREATE_COMPLETE     AWS::CloudFormation::Stack  tCaT-victor-wong-versent-apac-regions-f2b285e95a9a4cde934f2896dd2172f5
+2020-07-25 05:18:56.478000+00:00  CREATE_COMPLETE     AWS::S3::Bucket             Bucket
+2020-07-25 05:18:34.801000+00:00  CREATE_IN_PROGRESS  AWS::S3::Bucket             Bucket                                                                  Resource creation Initiated
+2020-07-25 05:18:32.520000+00:00  CREATE_IN_PROGRESS  AWS::S3::Bucket             Bucket
+2020-07-25 05:18:29.709000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  tCaT-victor-wong-versent-apac-regions-f2b285e95a9a4cde934f2896dd2172f5  User Initiated
+*****************************************************************************
+-----------------------------------------------------------------------------
+Tested on: Saturday, 25. July 2020 03:19PM
+-----------------------------------------------------------------------------
+

@@ -1,19 +1,14 @@
 #yamllint disable-file
 AWSTemplateFormatVersion: "2010-09-09"
 
-Parameters:
-  BucketName:
-    Type: String
-
 Resources:
   Bucket:
     Type: AWS::S3::Bucket
-    Properties:
-      BucketName: !Ref BucketName
-      AccessControl: LogDeliveryWrite
+    Properties:      
+      AccessControl: LogDeliveryWrite      
       BucketEncryption:
         ServerSideEncryptionConfiguration:
           - ServerSideEncryptionByDefault:
               SSEAlgorithm: aws:kms
               KMSMasterKeyID: alias/aws/s3
-      LoggingConfiguration: {}
+#      LoggingConfiguration: {}

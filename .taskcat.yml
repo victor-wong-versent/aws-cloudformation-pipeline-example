@@ -1,16 +1,12 @@
 general:
-  tags:
-    Owner: victor-wong-versent
-    Description: Demo taskcat
+  s3_bucket: victor-org-artifacts-ap-southeast-2 
+  # auth:
+  #   default: mf-demo-hub
+  #   ap-southeast-2: mf-demo-hub
 project:
-  owner: victor-wong-versent
-  #qsname: aws-cloudformation-pipeline-example
+  name: victor-wong-versent  
   regions:
     - ap-southeast-2
 tests:
   apac-regions:  
-    template: templates/workload.template.yaml    
-    parameters: 
-      BucketName: $[taskcat_autobucket]
-    regions:
-      - ap-southeast-2
+    template: templates/workload.template.yaml
