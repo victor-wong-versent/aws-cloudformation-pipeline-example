@@ -108,7 +108,7 @@ Resources:
                 ActionMode: CREATE_UPDATE
                 RoleArn: !Sub ${CloudFormationStackRole.Arn}
                 StackName: !Sub ${DeploymentStackName}
-                TemplatePath: SourceArtifact::templates/workload.template
+                TemplatePath: SourceArtifact::templates/workload.template.yaml
 
   # S3 Bucket to hold artifacts for the Pipeline. Only requirement is that the S3 bucket has
   # versioning enabled. Other settings are following best practices for S3 buckets (encryption,
