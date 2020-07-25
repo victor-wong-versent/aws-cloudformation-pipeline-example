@@ -28,7 +28,7 @@ phases:
 
       # Run taskcat, strip color escape codes, output taskcat log files on STDOUT, and exit with result of taskcat
       - |
-        taskcat -c ci/taskcat.yml | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g"
+        taskcat test run | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g"
         TASKCAT_RESULT=${PIPESTATUS[0]}
 
         ls -1 taskcat_outputs/*.txt | while read LOG
