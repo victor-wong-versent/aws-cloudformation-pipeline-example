@@ -7,3 +7,5 @@ tests:
   apac-regions:
     template_file: workload.template.yaml
     parameter_input: input.json
+    regions:
+      - ap-southeast-2

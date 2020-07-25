@@ -1,0 +1,14 @@
+general:
+  tags:
+    Owner: victor-wong-versent
+    Description: Demo taskcat
+project:
+  owner: victor-wong-versent
+  #qsname: aws-cloudformation-pipeline-example
+  regions:
+    - ap-southeast-2
+tests:
+  apac-regions:  
+    template: templates/workload.template.yaml    
+    regions:
+      - ap-southeast-2
